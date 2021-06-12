@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code Editor</title>
+</head>
+
+<body>
+    <div class="codearea">
+        <textarea id="htmlcode" placeholder="Html code" oninput="showPreview()"></textarea>
+        <textarea id="csscode" placeholder="css code" oninput="showPreview()"></textarea>
+        <textarea id="jscode" placeholder="JavaScrpt code" oninput="showPreview()"></textarea>
+    </div>
+    <div class="previewarea">
+        <iframe id="preview-window"></iframe>
+    </div>
+</body>
+
+</html>
