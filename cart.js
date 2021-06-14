@@ -25,11 +25,13 @@ form.addEventListener('submit', submitter);
 function submitter(event) {
     event.preventDefault();
     
-    Customer.customerArray.name=event.target.name.value;
+    let name= event.target.name.value;
     
-    Customer.customerArray.phone=event.target.phoneNumber.value;
+    let phone=event.target.phoneNumber.value;
     
-    Customer.customerArray.email=event.target.email.value;
+    let email= event.target.email.value;
+    
+    new Customer (name,phone,email);
 
 
     // console.log( Customer.customerArray.name);
