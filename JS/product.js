@@ -102,6 +102,7 @@ function getButton(event) {
 
 function updateStorage() {
 
+
     let arrayString = JSON.stringify(cart);
 
     localStorage.setItem('Cart', arrayString);
