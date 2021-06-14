@@ -17,10 +17,12 @@ for(let i=1;i<=24;i++) {
 
 
 
-function Product(name, price, quantity) {
+function Product(name, price, quantity,totalPrice) {
     this.name = name;
     this.price = price;
     this.quantity = 0;
+    this.totalPrice=price
+    
 
 
     Product.allProducts.push(this);
@@ -68,6 +70,8 @@ courses.addEventListener('click', getButton);
 laptops.addEventListener('click', getButton);
 chairs.addEventListener('click', getButton);
 
+let a = Product.allProducts.price
+
 function getButton(event) {
     for (let i = 0; i <= buttons.length; i++) {
 
@@ -78,6 +82,8 @@ function getButton(event) {
             if (cart.includes(Product.allProducts[i])) {
 
                 Product.allProducts[i].quantity++;
+
+                Product.allProducts[i].totalPrice+=Product.allProducts[i].price
 
             }
             else {
