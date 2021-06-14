@@ -19,6 +19,34 @@
         </nav>
     </header>
     <main>
+
+
+        <div id="cart-container">
+           <table>
+            <tr>
+                <th>Products</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+            </tr>
+           </table>
+
+
+            <table id="cart">
+                <!-- <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Remove</th>
+                </tr> -->
+            
+                <tfoot></tfoot>
+            </table>
+
+            <!-- <button type="submit">Place an order</button> -->
+           
+        </div>
+
         <form id="form">
             <fieldset>
                 <legend>Please enter your infomation to place your order:</legend>
@@ -43,27 +71,10 @@
                 <br>
                 <br>
 
-                <input type="submit" name="submit" value="Confirm" >
+                <input type="submit" name="submit" value="Place Order" >
 
             </fieldset>
         </form>
-
-<div id="cart-container">
-<table id="cart">
-    <tr>
-        <th>Products</th>
-        <th>Price</th>
-        <th>Remove</th>
-    </tr>
-  
-
-
-    <tfoot></tfoot>
-</table>
-<button type="submit">Place an order</button>
-</div>
-
-
 
 
     </main>
@@ -85,5 +96,6 @@
 
      </footer>
      <script src="cart.js"></script>
+     <script src="JS/product.js"></script>
 </body>
 </html>
