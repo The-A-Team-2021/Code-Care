@@ -51,9 +51,9 @@ new Product('chair4', 70, 0);
 
 let cart = [];
 
-courses = addEventListener('click', getButton);
-laptops = addEventListener('click', getButton);
-chairs = addEventListener('click', getButton);
+courses.addEventListener('click', getButton);
+laptops.addEventListener('click', getButton);
+chairs.addEventListener('click', getButton);
 
 function getButton(event) {
     for (let i = 0; i <= buttons.length; i++) {
@@ -86,8 +86,8 @@ function getButton(event) {
 
 function updateStorage() {
 
-let arrayString = JSON.stringify(Product.allProducts);
-localStorage.setItem('Product',arrayString);
+let arrayString = JSON.stringify(cart);
+localStorage.setItem('Cart',arrayString);
 
     
 }
