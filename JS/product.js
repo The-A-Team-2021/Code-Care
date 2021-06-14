@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 
 let courses = document.getElementById('coursetext');
@@ -92,7 +92,7 @@ function getButton(event) {
     }
 
     updateStorage();
-    //console.log(cart);
+    console.log(cart);
 
     
 }
