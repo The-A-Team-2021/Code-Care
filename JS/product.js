@@ -1,11 +1,11 @@
 'use strict';
 
 
-let courses = document.getElementById('coursetext');
+let courses = document.getElementById('courseimgs');
 
-let laptops = document.getElementById('laptoptext');
+let laptops = document.getElementById('laptopimgs');
 
-let chairs = document.getElementById('chairtext');
+let chairs = document.getElementById('chairimgs');
 
 
 let buttons=[]
