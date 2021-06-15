@@ -36,12 +36,23 @@ function submitter(event) {
 
     new Customer(name, phone,email);
 
-    alert(`Thank you ${name} we will send you confirmation Message to: ${email}`);
+    //alert(`Thank you ${name} we will send you confirmation Message to: ${email}`);
+    Swal.fire(
+      `Thank you  ${name}`,
+      'You order has been confirmed, We will contact you soon',
+      'success'
+    )
+      
     
-    console.log(Customer.customerArray);
+
+    document.getElementById("form").reset();
+    localStorage.clear();
+    table.textContent='';
     
     
-    storeCustomerData();
+    
+    
+    
 }
 
 
@@ -51,9 +62,9 @@ function submitter(event) {
 
 
 
-function CartItems(name,price,quantity,totalPrice) {
+function CartItems(name,quantity,totalPrice) {
   this.name=name;
-  this.price=price;
+  
   this.quantity=quantity;
   this.totalPrice=totalPrice;
   
@@ -79,6 +90,26 @@ console.log(CartItems.cartArray);
 
 let totalOfTotal=0;
 function render () {
+   let trHeader=document.createElement('tr');
+   table.appendChild(trHeader);
+
+   let thName=document.createElement('th')
+   trHeader.appendChild(thName);
+   thName.textContent=`Products`;
+
+   
+   let thPrice=document.createElement('th')
+   trHeader.appendChild(thPrice);
+   thPrice.textContent=`Price`;
+
+   let thQuantity=document.createElement('th')
+   trHeader.appendChild(thQuantity);
+   thQuantity.textContent=`Quantity`;
+
+
+   let thRemove=document.createElement('th')
+   trHeader.appendChild(thRemove);
+   thRemove.textContent=`Remove`;
 
   for (let i = 0; i < CartItems.cartArray .length ; i++) {
     let trProducts = document.createElement('tr');
@@ -103,8 +134,8 @@ function render () {
 
     tdQuan.textContent = CartItems.cartArray[i].quantity;
 
-    let tdPerItemPrice=document.createElement('td');
-    trProducts.appendChild(tdPerItemPrice);
+    // let tdPerItemPrice=document.createElement('td');
+    // trProducts.appendChild(tdPerItemPrice);
    
     console.log(CartItems.cartArray);
 
@@ -129,13 +160,14 @@ function render () {
 
   let tdtotal = document.createElement('td');
   total.appendChild(tdtotal );
-
+    
    tdtotal.textContent = 'Total' ;
 
 
     let tdTotalPrice = document.createElement('td');
     total.appendChild(tdTotalPrice);
-
+    
+    tdTotalPrice.setAttribute('id', 'total');
     tdTotalPrice.textContent = totalOfTotal;
 
     
@@ -160,7 +192,7 @@ function removeItem(event){
    let y=x[x.length-1];
    let z="trProducts"
 
-    z+=y 
+    z+=y ;
     console.log(z)
     let tr=document.getElementById(`${z}`);
     tr.textContent='';
