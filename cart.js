@@ -61,11 +61,13 @@ function submitter(event) {
 
 
 
-//let cartItems=[];
-function CartItems(name,price,quantity) {
+
+
+function CartItems(name,price,quantity,totalPricePerItem) {
   this.name=name;
   this.price=price;
   this.quantity=quantity;
+  this.totalPrice=totalPricePerItem;
   
   CartItems.cartArray.push(this);
   
@@ -77,29 +79,22 @@ CartItems.cartArray=[];
 
 function getFromLocalStorage () {
 
-  CartItems.cartArray = JSON.parse(localStorage.getItem('Cart'));
+  CartItems.cartArray= JSON.parse(localStorage.getItem('Cart'));
 
   console.log(CartItems.cartArray);
-  //console.log(CartItems.cartArray[0])
 
-//   for (let i = 0; i <CartItems.cartArray.length; i++) {
-  
-  
-//     cartItems[i]= new CartItems();
 
-   
-//    }
-// console.log(`new array ${cartItems}`)
+ console.log(CartItems.cartArray);
   
-
 }
 
-console.log(CartItems.cartArray);
+  
 
-let totalPrice=0;
+
+
+
+let totalPricePerItem=0;
 function render () {
-
- // console.log(`cart ${cartItems}`)
 
   for (let i = 0; i < CartItems.cartArray .length ; i++) {
     let trProducts = document.createElement('tr');
@@ -117,12 +112,17 @@ function render () {
     trProducts.appendChild(tdPrice);
 
     tdPrice.textContent = CartItems.cartArray[i].price;
-    totalPrice+=CartItems.cartArray[i].price;
+    
     
     let tdQuan = document.createElement('td');
     trProducts.appendChild(tdQuan);
 
     tdQuan.textContent = CartItems.cartArray[i].quantity;
+
+    let tdPerItemPrice=document.createElement('td');
+    trProducts.appendChild(tdPerItemPrice);
+   
+    totalPricePerItem+=CartItems.cartArray[i].totalPricePerItem;
 
     let tdRemove = document.createElement('td');
    
@@ -147,7 +147,7 @@ function render () {
     let tdTotalPrice = document.createElement('td');
     total.appendChild(tdTotalPrice);
 
-    tdTotalPrice.textContent = totalPrice;
+    tdTotalPrice.textContent = totalPricePerItem;
 
     
     
@@ -167,22 +167,20 @@ function removeItem(event){
     //console.log(event.target.id)
    let x= event.target.id
 
-   //console.log(x.length-1)
+   console.log(x.length-1)
    let y=x[x.length-1];
    let z="trProducts"
 
     z+=y 
-    //console.log(z)
+    console.log(z)
     let tr=document.getElementById(`${z}`);
     tr.textContent='';
-  
-   console.log(`remove${CartItems.cartArray[0]}`)
-    //
-    // table.removeChild(`${z}`)
-  
-    //table.textContent='';
-    //totalPrice=0;
-    //render();
+    console.log(CartItems.cartArray);
+    CartItems.cartArray.splice(x,1);
+    
+    table.textContent='';
+    totalPricePerItem=0;
+    render();
 
    
   }
