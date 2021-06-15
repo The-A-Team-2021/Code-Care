@@ -5,21 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/styleeditor.css">
     <title>Code Editor</title>
+
 </head>
 
 <body>
-    <div class="codearea">
-        <textarea id="htmlcode" placeholder="Html code" oninput="showPreview()"></textarea>
-        <textarea id="csscode" placeholder="css code" oninput="showPreview()"></textarea>
-        <textarea id="jscode" placeholder="JavaScript code" oninput="showPreview()"></textarea>
-        <button id="button1"> Run</button>
+    <header>
+        <header>
+            <h2>Code care</h2>
+            <img id="logo" src="img/logo.png" alt="logo">
+            <a href="cart.html"><img id="cart" src="img/cart icon-07.png" alt="small cart"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </header>
+    <!-- <main> -->
+    <div id="codearea">
+        <textarea id="htmlcode" class="code" placeholder="Html code" oninput="showPreview()"></textarea>
+        <textarea id="csscode" class="code" placeholder="css code" oninput="showPreview()"></textarea>
+        <textarea id="jscode" class="code" placeholder="JavaScript code" oninput="showPreview()"></textarea>
+
     </div>
-    <div class="previewarea">
-        <iframe id="preview-window"></iframe>
+    <div>
+        <button id="button1"> Run Code</button>
+        <iframe id="previewwindow"></iframe>
+
     </div>
+    </div>
+
+    <!-- </main> -->
     <script src="JS/app.js"></script>
+
+    <footer>
+
+        <h3>Contact Us</h3>
+        <p id="p1"> Number : 0799999888</p>
+        <p id="p2"> E-mail : codeCare2021@gmail.com</p>
+
+      
+
+            <img class="imagesfooter" src="img/socialmedia-icons-01.png" alt="instagram" width="4%">
+
+
+            <img class="imagesfooter" src="img/socialmedia-icons-02.png" width="4%" alt="bee">
+
+
+            <img class="imagesfooter" src="img/socialmedia-icons-03.png" width="4%" alt="google+">
+
+
+            <img class="imagesfooter" src="img/socialmedia-icons-04.png" width="4%" alt="Linkedin">
+
+            <img class="imagesfooter" src="img/socialmedia-icons-05.png" width="4%" alt="twitter">
+
+        
+
+        <p id="p3">&copy;ASAC2021</p>
+
+    </footer>
 </body>
 
 </html>
