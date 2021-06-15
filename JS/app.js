@@ -6,7 +6,7 @@ let cssCode = "<style>"+ document.getElementById('csscode').value + "</style>";
 
 let jsCode = "<scri"+"pt>" + document.getElementById('jscode').value + "</scri"+"pt>" ;
 
-let frame = document.getElementById('preview-window').contentWindow.document ;
+let frame = document.getElementById('previewwindow').contentWindow.document ;
 
 frame.open();
 document.getElementById('button1').onclick = function (){frame.write(htmlCode+cssCode+jsCode);};
