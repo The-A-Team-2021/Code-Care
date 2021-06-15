@@ -26,21 +26,9 @@ form.addEventListener('submit', submitter);
 
 
 function submitter(event) {
-<<<<<<< HEAD
-    event.preventDefault();
-    
-    let name= event.target.name.value;
-    
-    let phone=event.target.phoneNumber.value;
-    
-    let email= event.target.email.value;
-    
-    new Customer (name,phone,email);
-=======
    event.preventDefault();
     
     let name= event.target.name.value;
->>>>>>> f3f6ac6d5c5a67a80171a222b612518eec42b61b
 
     let phone =event.target.phoneNumber.value;
    

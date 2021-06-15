@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background-color: #1F2E29;
+    color: white;
+    height: 120px;
+
+}
+
+
+#logo {
+
+   height: 139px;
+    position: relative;
+    top: 0px;
+    right: 10%;
+}
+
+
+
+#cart {
+    position: relative;
+    left: 50%;
+    
+    bottom: 29px;
+ 
+}
+
+
+#cart:hover{
+    background-color: #7e1038; /* Green */
+    color: white;
+}
+
+
+
+header a img {
+   
+    margin: 20px;
+    height: 45%;
+    width: 4%;
+}
+
+
+header h2{
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    left: 190px;
+    bottom: 64px;
+
+
+
+   
+}
+
+
+
+
+
+nav{
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    left: 56%;
+    bottom: 70px;
+    
+}
+
+
+nav ul{
+    text-decoration: none;
+   
+}
+
+
+nav ul li {
+    display: inline-block;   
+    text-decoration: none;
+   
+}
+
+
+/* ////end of header */
+
+
+
+body{
+    background-color: whitesmoke;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* background-color: EAEAEA; */
+}
+
+
+main{
+    margin: 5%;
+}
+
+
+main label {
+    font-size: 140%;
+}
+
+
+
+.section-layout {
+    font-weight: bold;
+    color: #BE1452;
+    font-size: 140%;
+}
+
+
+.section-name {
+    font-size: 140%;
+    color:#1F2E29;
+    font-weight: bold;
+
+}
+
+
+#courseimgs {
+    border-left: 2px solid #BE1452;
+    
+}
+
+#laptopimgs {
+    border-left: 2px solid #BE1452;
+}
+
+
+#chairimgs {
+    border-left: 2px solid #BE1452;
+   
+}
+section h2 {
+    margin: 2px;
+    
+
+}
+
+.products {
+    margin: 2% 4%;
+
+    text-align: center;
+
+
+
+    
+}
+
+
+.row {
+    display: flex;
+}
+
+
+.allbuttons{
+    background-color:  #BE1452; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+
+
+.allbuttons:hover {
+    background-color: #7e1038; /* Green */
+    color: white;
+  }
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #1F2E29;
+    height: 40%;
+    position: relative;
+    color: white;
+    padding: 1%;
+}
+
+
+.imagesfooter{
+display: inline-block;
+float: right;
+position: relative;
+bottom: 30%;
+}
+#p2,#p1{
+padding: 1%;
+margin-top: 1%;
+}
+#p3{
+text-align: center;
+margin-top: 4%;
+
+bottom: 10%;
+left: 10%;
+}
+
+
