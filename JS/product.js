@@ -80,16 +80,26 @@ function getButton(event) {
         if (event.target.id === `button${i + 1}`) {
 
             if (cart.includes(Product.allProducts[i])) {
+                
 
                 Product.allProducts[i].quantity++;
 
                 Product.allProducts[i].totalPrice+=Product.allProducts[i].price
-
+                Swal.fire(
+                    'Added to Cart!',
+                    'Your Product Successfuly added to the cart!',
+                    'success'
+                  )
             }
             else {
 
                 cart.push(Product.allProducts[i]);
                 Product.allProducts[i].quantity++;
+                Swal.fire(
+                    'Added to Cart!',
+                    'Your Product Successfuly added to the cart!',
+                    'success'
+                  )
 
 
             }
