@@ -26,21 +26,9 @@ form.addEventListener('submit', submitter);
 
 
 function submitter(event) {
-<<<<<<< HEAD
-    event.preventDefault();
-    
-    let name= event.target.name.value;
-    
-    let phone=event.target.phoneNumber.value;
-    
-    let email= event.target.email.value;
-    
-    new Customer (name,phone,email);
-=======
    event.preventDefault();
     
     let name= event.target.name.value;
->>>>>>> f3f6ac6d5c5a67a80171a222b612518eec42b61b
 
     let phone =event.target.phoneNumber.value;
    
@@ -63,11 +51,11 @@ function submitter(event) {
 
 
 
-function CartItems(name,price,quantity,totalPricePerItem) {
+function CartItems(name,price,quantity,totalPrice) {
   this.name=name;
   this.price=price;
   this.quantity=quantity;
-  this.totalPrice=totalPricePerItem;
+  this.totalPrice=totalPrice;
   
   CartItems.cartArray.push(this);
   
@@ -82,18 +70,14 @@ function getFromLocalStorage () {
   CartItems.cartArray= JSON.parse(localStorage.getItem('Cart'));
 
   console.log(CartItems.cartArray);
-
-
- console.log(CartItems.cartArray);
-  
 }
 
-  
+console.log(CartItems.cartArray);
 
 
 
 
-let totalPricePerItem=0;
+let totalOfTotal=0;
 function render () {
 
   for (let i = 0; i < CartItems.cartArray .length ; i++) {
@@ -122,7 +106,12 @@ function render () {
     let tdPerItemPrice=document.createElement('td');
     trProducts.appendChild(tdPerItemPrice);
    
-    totalPricePerItem+=CartItems.cartArray[i].totalPricePerItem;
+    console.log(CartItems.cartArray);
+
+    totalOfTotal+=Number(CartItems.cartArray[i].totalPrice);
+    
+
+    console.log(totalOfTotal);
 
     let tdRemove = document.createElement('td');
    
@@ -147,7 +136,7 @@ function render () {
     let tdTotalPrice = document.createElement('td');
     total.appendChild(tdTotalPrice);
 
-    tdTotalPrice.textContent = totalPricePerItem;
+    tdTotalPrice.textContent = totalOfTotal;
 
     
     
@@ -179,7 +168,7 @@ function removeItem(event){
     CartItems.cartArray.splice(x,1);
     
     table.textContent='';
-    totalPricePerItem=0;
+    totalOfTotal=0;
     render();
 
    
@@ -189,7 +178,7 @@ function removeItem(event){
 
 
 getFromLocalStorage();
-
+console.log(CartItems.cartArray);
 render();
 
 
