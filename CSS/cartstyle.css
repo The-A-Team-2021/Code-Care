@@ -1,12 +1,10 @@
 body{
-    background-color: whitesmoke;
-    
+
+    background-color:whitesmoke;
+    position: relative;
+
 }
 
-
-*{
-    box-sizing: border-box;
-}
 
 header {
     background-color: #1F2E29;
@@ -29,16 +27,37 @@ header h2{
     top: 0px;
     right: 10%;
 }
-
-
-nav{
-    display: inline-block;
-    font-size: 25px;
+#cart-logo{
+    
+    
     position: relative;
-    left:80%;
-    bottom: 90px;
+    left: 30%;
+    width: 50px;
+    bottom: 25px;
+    height: 35%;
+  
+}
+header a img {
+    height: 80px;
+    margin: 20px;
+}
+
+ header a img:hover{ 
+    background-color: #BE1452;
+    border-radius: 10px;
    
 }
+
+
+ nav ul{
+  
+    font-size: 25px;
+    position: relative;
+    left:58%;
+    bottom: 90px;
+   
+   
+} 
 
 
 nav ul{
@@ -48,6 +67,17 @@ nav ul{
 
 
 nav ul li {
+
+
+    text-decoration: none;
+    color:white;
+   
+    display: inline;
+    padding-left: 36px;
+}
+ 
+nav ul li a{
+
     display: inline-block;
     padding: 0% 10px;
     
@@ -58,13 +88,27 @@ nav ul li a{
     color:white;
     
 
+
+    text-decoration: none;
+    color:white;
+   
+    
+    
 }
 
+
+
+nav ul li a:hover{
+    background-color: #7E1038;
+    color: white;
+    border-radius: 10px;
+}
 
 nav ul li  :hover{
     background-color: #BE1452;
     border-radius: 5px;
  }
+
 /* 
 #tableheader{
     margin-left:30%;
@@ -91,11 +135,16 @@ nav ul li  :hover{
 
 div table tr td {
    
-    background-color: #f8d5df; 
+    background-color:rgb(216, 215, 215);
    
-    border:solid gray 2px;
+    /* border: 2px solid #BE1452; */
+    
     border-collapse: collapse;   
     padding:20px;
+
+    /* font-family: 'Architects Daughter', cursive; */
+
+
     font-family: 'Ubuntu', sans-serif;
      text-align: center;
      text-indent: 20px;
@@ -107,42 +156,126 @@ div table tr td {
   div table tr th{
     background-color: #1F2E29;;  
     color: white;
-    border:solid gray 2px;
+    /* border: 2px solid #BE1452; */
+    /* border-radius: 12px; */
     border-collapse: collapse;
     padding:20px;
+
+    /* font-family: 'Architects Daughter', cursive; */
+
+
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
      text-indent: 20px;
      font-size: x-large;
 
   }
+
+
+
+
+  
+
+  div table tr div{
+
+   
+    display: inline-block;
+    background-color: rgb(216, 215, 215);
+    padding: 30px;
+    margin-left:50px;
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    border: 1px solid #be145257;
+  }
  #cart {
 
-    margin-left: 25%
+    margin-left: 25%;
+    
 }
      
     
-#total{
-    padding-left: 20px;
-    font-weight: 200;
-}
+/* #total{
+  
+    display: inline;
+    background-color: #f8d5df;
+    padding: 30px;
+    margin-bottom: 30%;
+} */
 
 
  #form{
-     /* background-color: rgb(219, 216, 216); */
- margin-left: 25%;
+ background-color: rgb(216, 215, 215);
+ margin-right: 20%;
+ margin-left: 20%;
  font-family: 'Ubuntu', sans-serif;
-
+ font-size: large;
+ font-weight: bold;
+ border: 2px solid #BE1452;
+ border-radius: 12px;
+ 
         
         } 
+
+
+
+        #legend{
+            padding-top: 5%;
+            margin-left: 4%;
+}
+
+        #name{
+        height: 40px;
+        width: 300px;
+        margin-left: 105px;
+        
+
+
+        }
+        #email{
+            height: 40px;
+            width: 300px;
+            margin-left: 100px;
+    
+        }
+        #phoneNumber{
+            height: 40px;
+            width: 300px;
+            margin-left: 30px;
+    
+
 #button{
            background-color: #f8d5df;
            border-radius: 5px;
            width: 100px;
            height: 50px;
            font-family: 'Ubuntu', sans-serif;
+
         }
 
+       label{
+            display:inline-table;
+            text-align: right;
+       
+           padding-left: 50px;}
+
+#button{
+    background-color:  #BE1452; /* Green */
+    border: none;
+    color: white;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    border-radius: 12px;
+    width: 160px;
+    height: 80px;
+    margin-left: 60%;
+    margin-bottom: 5%;
+
+    
+}
         footer{
             background-color: #1F2E29;
             height: 10%;
@@ -169,7 +302,6 @@ div table tr td {
     #p3{
         text-align: center;
         margin-top: 4%;
-      
         bottom: 10%;
         left: 10%;
     }

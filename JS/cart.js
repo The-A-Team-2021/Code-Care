@@ -158,13 +158,13 @@ function render () {
   
   table.appendChild( total);
 
-  let tdtotal = document.createElement('td');
+  let tdtotal = document.createElement('div');
   total.appendChild(tdtotal );
     
    tdtotal.textContent = 'Total' ;
 
 
-    let tdTotalPrice = document.createElement('td');
+    let tdTotalPrice = document.createElement('div');
     total.appendChild(tdTotalPrice);
     
     tdTotalPrice.setAttribute('id', 'total');

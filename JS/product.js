@@ -85,6 +85,7 @@ function getButton(event) {
 
                 Product.allProducts[i].totalPrice+=Product.allProducts[i].price
 
+
                 Swal.fire(
                     'Added to Cart!',
                     'Your Product Successfuly added to the cart!',
@@ -100,7 +101,12 @@ function getButton(event) {
                     'Your Product Successfuly added to the cart!',
                     'success'
 
+                  )
+
+
+
                 )
+
             }
         }
 
