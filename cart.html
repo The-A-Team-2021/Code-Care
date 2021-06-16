@@ -12,25 +12,64 @@
     
 </head>
 <body>
-     
-        <header>
-            <div>
-                <h2>Code care</h2>
-                <img src="img/logo.png" alt="logo" id="logo" >
-            </div>
-    
-         <nav>
+    <header>
+        <h2>Code care</h2>
+        <img id="logo" src="img/logo.png" alt="logo">
+        <a href="cart.html"> <img id="cart-logo" src="img/cart icon-07.png" alt="small cart"> </a>
+        <nav>
             <ul>
-                
                 <li><a href="index.html">Home</a></li>
+                <li><a href="codeeditor.html">Code Editor</a></li>
                 <li><a href="productlist.html">Products</a></li>
+                <li><a href="exercises.html">Physical Exercises</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
+
+
     <br>
     <br>
     <br>
     <main>
+
+        <form id="form">
+            <fieldset>
+                <legend id="legend">Please enter your infomation to place your order:</legend>
+                <br>
+                <br>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                <br>
+                <br>
+
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" required>
+
+                <br>
+                <br>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                <br>
+                <br>
+
+                <input type="submit" name="submit" value="Place Order" id="button" >
+
+            </fieldset>
+        </form>
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+
+
            <div>
   
             <table id="cart">
@@ -43,34 +82,7 @@
         <br>
         <br>
         
-            <form id="form">
-                <fieldset>
-                    <legend>Please enter your infomation to place your order:</legend>
-                    <br>
-                    <br>
-    
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-    
-                    <br>
-                    <br>
-    
-                    <label for="phoneNumber">Phone number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" required>
-    
-                    <br>
-                    <br>
-    
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    
-                    <br>
-                    <br>
-    
-                    <input type="submit" name="submit" value="Place Order" id="button" >
-    
-                </fieldset>
-            </form>
+            
     
         
         <br>

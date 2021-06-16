@@ -5,6 +5,7 @@ body{
     width: 100%;
 }
 header {
+
     background-color: #1F2E29;
     color: white;
     height: 120px;
@@ -12,6 +13,16 @@ header {
     margin-top: -2%;
     margin-left: -1%;
     margin-right: -1%; 
+
+      background-color: #1F2E29;
+      color: white;
+      height: 120px;
+      width: 102%;
+      margin-top: -2%;
+      margin-left: -1%;
+      margin-right: -1%; 
+      
+
 }
 #logo {
    height: 139px;
@@ -65,6 +76,18 @@ nav ul li a{
 }
   
 
+
+nav ul li a:hover{
+  background: #BE1452;  
+  border-radius: 5px;
+} 
+
+
+main h1 {
+    text-align: center;
+}
+
+
 footer{
     background-color: #1F2E29;
     height: 240px;
@@ -92,12 +115,12 @@ footer{
 }
 
 #p3{
- text-align: center;
- margin-top: 4%;
-
- bottom: 10%;
- left: 10%;
- color: white;
+    text-align: center;
+    margin-top: 4%;
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    display: inline-block;
 
 }
 
@@ -171,4 +194,9 @@ footer{
     text-align: center;
    
     color: rgb(20, 20, 20);
+}
+
+
+#title{
+    text-align: center;
 }

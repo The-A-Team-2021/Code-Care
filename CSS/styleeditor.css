@@ -159,6 +159,16 @@ footer{
  margin-top: 1%;
 }
 
+
+#p3{
+    text-align: center;
+    margin-top: 4%;
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    display: inline-block;
+} 
+
 #p3 {
     text-align: center;
     left: 10%;
@@ -168,5 +178,6 @@ footer{
     position: absolute;
     top: 183px;
     left: 596px;
+
 
 }

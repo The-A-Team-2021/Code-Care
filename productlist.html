@@ -10,36 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <header>
-
         <h2>Code care</h2>
         <img id="logo" src="img/logo.png" alt="logo">
-
-        <a id="cart" href="cart.html"><img src="img/cart icon-07.png" alt="small cart"></a>
-
+        <a href="cart.html"><img id="cart-logo" src="img/cart icon-07.png" alt="small cart"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-
+                <li><a href="codeeditor.html">Code Editor</a></li>
+                <li><a href="productlist.html">Products</a></li>
+                <li><a href="exercises.html">Physical Exercises</a></li>
             </ul>
         </nav>
-
-
     </header>
 
     <main id='product'>
-        <label for="product">Choose a Product:</label>
-        <select name="products" id="products">
-            <option value=""></option>
-            <option id="Courses" value="Courses">Courses</option>
-            <option id="Laptops" value="Laptops">Laptops</option>
-            <option id="Chairs" value="Chairs">Chairs</option>
 
-        </select>
+        <div id="stylingdropdown">
+           
+            <div id="select-border">
+                <div id="select">
+                    <label for="product">Choose a Product:</label>
+                    <select name="products" id="products">
 
+                        <option id="Courses" value="Courses">Courses</option>
+                        <option id="Laptops" value="Laptops">Laptops</option>
+                        <option id="Chairs" value="Chairs">Chairs</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
         <section id="course">
             <h2><span class="section-layout">&lt;section&gt;</span><span class="section-name"> Courses</span></h2>
 
@@ -140,7 +152,10 @@
 
 
         <section id="laptop">
-            <h2><span class="section-layout">&lt;section&gt;</span><span class="section-name"> </span></h2>
+
+            <h2><span class="section-layout">&lt;section&gt;</span><span class="section-name"> Laptops </span></h2>
+
+            <h2><span class="section-layout">&lt;section&gt;</span><span class="section-name"> Laptops</span> </h2>
 
             <div id="laptopimgs">
 
@@ -266,7 +281,7 @@
 
 
                     <div class='products'>
-                        <img src="img/chair3.jpg" alt="" id="img19" style="width: 300px;">
+                        <img src="img/replace-chair3.jpg" alt="" id="img19" style="width: 200px;">
                         <button id="button19" class="allbuttons">
                             add to Cart
                         </button>
@@ -274,7 +289,7 @@
 
 
                     <div class='products'>
-                        <img src="img/chair4.jpg" alt="" id="img20" style="width: 150px;">
+                        <img src="img/s-l640.jpg" alt="" id="img20" style="width: 200px;">
                         <button id="button20" class="allbuttons">
                             add to Cart
                         </button>
@@ -312,7 +327,7 @@
 
 
                     <div class='products'>
-                        <img src="img/chair8.jpg" alt="" id="img24" style="width: 300px;">
+                        <img src="img/replace-chair8.jpg" alt="" id="img24" style="width: 200px;">
                         <button id="button24" class="allbuttons">
                             add to Cart
                         </button>
@@ -334,21 +349,37 @@
         <h3>Contact Us</h3>
         <p id="p1"> Number : 0799999888</p>
         <p id="p2"> E-mail : codeCare2021@gmail.com</p>
-            <img class="imagesfooter" src="img/socialmedia-icons-01.png" alt="instagram" width="4%">
-            <img class="imagesfooter" src="img/socialmedia-icons-02.png" width="4%" alt="bee">
-            <img class="imagesfooter" src="img/socialmedia-icons-03.png" width="4%" alt="google+">
-            <img class="imagesfooter" src="img/socialmedia-icons-04.png" width="4%" alt="Linkedin">
-            <img class="imagesfooter" src="img/socialmedia-icons-05.png" width="4%" alt="twitter">
+        <img class="imagesfooter" src="img/socialmedia-icons-01.png" alt="instagram" width="4%">
+        <img class="imagesfooter" src="img/socialmedia-icons-02.png" width="4%" alt="bee">
+        <img class="imagesfooter" src="img/socialmedia-icons-03.png" width="4%" alt="google+">
+        <img class="imagesfooter" src="img/socialmedia-icons-04.png" width="4%" alt="Linkedin">
+        <img class="imagesfooter" src="img/socialmedia-icons-05.png" width="4%" alt="twitter">
         <p id="p3">&copy;ASAC2021</p>
     </footer>
-
+    
     <script src="JS/product.js"></script>
+
+
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+   </body>
+   </html>
+
+
+
+
+
+
+ 
+
+
+
+
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-      
-
-
 
 
 
@@ -357,10 +388,3 @@
 
 </html>
 
-
-
-
-
-
-
- 
