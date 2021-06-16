@@ -212,12 +212,21 @@ padding: 1%;
 margin-top: 1%;
 }
 #p3{
+
+    text-align: center;
+    margin-top: 4%;
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    display: inline-block;
+
     display: inline-block;
 text-align: center;
 margin-top: 4%;
 
 bottom: 10%;
 padding-left: 45%;
+
 }
 
 
