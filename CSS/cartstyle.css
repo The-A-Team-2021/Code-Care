@@ -161,8 +161,9 @@ div table tr td {
     #p3{
         text-align: center;
         margin-top: 4%;
-      
+        position: relative;
         bottom: 10%;
-        left: 10%;
+        left: 45%;
+        display: inline-block;
     }
     

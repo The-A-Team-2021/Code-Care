@@ -109,12 +109,12 @@ footer{
 }
 
 #p3{
- text-align: center;
- margin-top: 4%;
-
- bottom: 10%;
- left: 10%;
- color: white;
+    text-align: center;
+    margin-top: 4%;
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    display: inline-block;
 
 }
 
@@ -174,4 +174,9 @@ footer{
     font-weight: bolder;
     text-align: justify;
     color: black;
+}
+
+
+#title{
+    text-align: center;
 }
