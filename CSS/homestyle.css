@@ -11,26 +11,39 @@ header {
     margin-right: -1%;
     position: fixed;
     z-index: 1;
+
 }
 #logo {
    height: 139px;
     position: relative;
+
     top: 5px;
+
+    top: 6px;
+
     right: 10%;
 }
-#cart {
+#cart-logo {
     position: relative;
+
     left: 34%;
+
+    left: 30%;
+
     width: 50px;
     bottom: 25px;
     height: 35%;
 }
-
-
 header a img {
     height: 80px;
     margin: 20px;
 }
+
+
+
+ header a  :hover{
+    background-color: #BE1452;
+    border-radius: 10px;
 
 
  header a  :hover{
@@ -43,27 +56,42 @@ header h2{
     font-size: 40px;
     position: relative;
     left: 190px;
+
     bottom: 60px;
+
+    
+    bottom: 55px;
+
 }
 nav{
     display: inline-block;
     font-size: 20px;
     position: relative;
+
     left: 30%;
+    bottom: 60px;
+
+
+    left: 28%;
     bottom: 60px;
 
 }
 nav ul li {
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
 }
-
 nav ul li a{
     text-decoration: none;
     color: white;
-
+}
+ nav ul li  :hover{
+   background-color: #BE1452;
+   border-radius: 5px;
+   padding: 10px;
 }
 
+
+/* end of header */
 
 
  nav ul li  :hover{
@@ -75,6 +103,13 @@ nav ul li a{
 } 
 
 
+
+body{
+    background-color: whitesmoke;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    /* background-color: EAEAEA; */
+}
+
 #heroimg{
     width: 80%;
     margin-top: 8%;
@@ -84,31 +119,92 @@ nav ul li a{
 }
 
 #section1{
+    width: 80%;
     margin-left: 10%;
+    padding-top: 5%;
+    /* margin-right: 3%; */
+    /* background-color: white; */
+    height: 500px;
 }
 
+
+
+#h2-inlineblock{
+    display: inline-block;
+    position: relative;
+    
+    top: 25px;
+    /* right: 29px; */
+
+    right: 70px;
+}
+
+#h2-inlineblock-aboutus{
+    display: inline-block;
+    position: relative;
+    right: 70px;
+    top: 25px;
+    
+
+}
 #startcoding{
 width: 50%;
 float: left;
+border-left: 2px solid #BE1452;
+padding: 20px 0px 10px 40px;
 }
 
+
+.div-layout{
+    font-weight: bold;
+    color: #BE1452;
+    font-size: 140%;
+}
+
+
+.div-name{
+    font-size: 140%;
+    color:#1F2E29;
+    font-weight: bolder;
+}
+
+
+.p-layout{
+   
+    color:#BE1452;
+    font-weight: bolder;
+}
+
+
+
+.p-shifting{
+    position: relative;
+    left: 30px;
+}
 
 #aboutus{
 width: 50%;
 float: right;
+border-left: 2px solid #BE1452;
+padding: 20px 0px 10px 40px;
 }
 
+#border-for-paragragh{
+    border-left: 2px solid #BE1452;
+
+}
 
 #para1{
-    width: 85%;
-    font-family: 'Ubuntu', sans-serif;
+    width: 80%;
+    
     font-size: 120%;
+    
     text-align: justify;
 }
 
 #para2{
-    width: 79%;
-    font-family: 'Ubuntu', sans-serif;
+    width: 80%;
+    
     font-size: 120%;
     text-align: justify;
 }
@@ -117,31 +213,37 @@ float: right;
    font-size: 160%;
     }
 
+    /* start of footer*/
 
     footer{
         background-color: #1F2E29;
         height: 40%;
-        position: absolute;
-        bottom: 1%;
-        left: 2px;
-        top: 180%;
+        position: relative;
         color: white;
-        width: 100%; 
-        padding: 1%;  
-}
- .imagesfooter{
-    display: inline-flex;
-   float: right;
+        padding: 1%;
+    }
+    
+    footer h3 {
+        display: inline-block;
+        padding-left: 12px;
+    }
+    
+    
+    .imagesfooter{
+    display: inline-block;
+    float: right;
     position: relative;
     bottom: 30%;
-}
-#p2,#p1{
-   padding: 1%;
+    }
+    #p2,#p1{
+    padding: 1%;
     margin-top: 1%;
-}
-#p3{
+    }
+    #p3{
+        display: inline-block;
     text-align: center;
     margin-top: 4%;
+
     position: relative;
     bottom: 15%;
     left: 45%;
@@ -149,7 +251,17 @@ float: right;
     
 }
 
+    
+    bottom: 10%;
+    padding-left: 45%;
+    }
+
+
+
+
+    /* end of footer  */
 button{
+
     background-color:  #BE1452; 
     border: none;
     color: white;
@@ -163,8 +275,27 @@ button{
 
 button:hover{
     background-color: #7E1038; 
+
+    margin-top: 6%;
+    border-radius: 12px;
+    background-color: #BE1452;
+    color: white;
+    width: 15%;
+    height: 30px;
+    border: none;
+    padding: 1px 15px;
+    text-align: center;
+    font-size: 14px;
+
+
+}
+
+button:hover{ 
+    background-color: #7e1038; /* Green */
+
     color: white;
 }
+
 
 
 
@@ -263,3 +394,4 @@ button:hover{
   from {opacity: .4}
   to {opacity: 1}
 }
+

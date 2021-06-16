@@ -86,20 +86,16 @@ nav ul li a:hover{
  font-weight: bolder;
 }
 
-#button1{
-    
+#button1 {
     margin-left: 70%;
-    margin-top: 2%;
-    position: relative;
-    bottom: 990px;
+    margin-bottom: 2%;
     width: 15%;
-    height: 150%;
-    float: center;
     background: #49A6B7;
     border-radius: 10px;
     padding: 5px 30px;
     color: white;
 }
+
 
 #button1:hover{
   background: #BE1452;
@@ -116,31 +112,40 @@ border: 2px solid #BE1452;
 }
 
 #codearea{
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
-#previewwindow{
-  width: 745px;
-  height: 925px;
-  margin-left: 40%;
-  position: relative;
-  bottom: 980px;
-  float: right;
-  border: 2px solid   #BE1452;
-  box-shadow: 5px;
+#previewwindow {
+  
+       
+            /* margin-top: 111px; */
+            height: 869px; 
+            width: 745px;
+            margin-left: 40%;
+            /* position: relative; */
+            /* bottom: 980px; */
+            float: right;
+            border: 2px solid #BE1452;
+            box-shadow: 5px;
+ 
+ 
+
 }
+
 
 footer{
-    background-color: #1F2E29;
-    height: 38%;
-    position: absolute;
-    /* bottom: 1%; */
-    left: 2px;
-    top: 180%;
-    color: white;
-    width: 100%; 
-    padding: 1%;  
- clear: both;
+    
+        background-color: #1F2E29;
+        height: 38%;
+        position: absolute;
+        
+        left: 2px;
+        top: 180%;
+        color: white;
+        width: 100%;
+        /* padding: 1%; */
+     
+
 }
 
 .imagesfooter{
@@ -155,6 +160,7 @@ footer{
  margin-top: 1%;
 }
 
+
 #p3{
     text-align: center;
     margin-top: 4%;
@@ -164,3 +170,15 @@ footer{
     display: inline-block;
 } 
 
+#p3 {
+    text-align: center;
+    left: 10%;
+}
+
+#iframe-parent{
+    position: absolute;
+    top: 170px;
+    left: 596px;
+
+
+}

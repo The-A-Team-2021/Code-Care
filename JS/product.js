@@ -90,6 +90,12 @@ function getButton(event) {
                     'success'
                   )
 
+
+                Swal.fire(
+                    'Added to Cart!',
+                    'Your Product Successfuly added to the cart!',
+                    'success'
+                  )
             }
             else {
 
@@ -99,8 +105,16 @@ function getButton(event) {
                     'Added to Cart!',
                     'Your Product Successfuly added to the cart!',
                     'success'
+
                   )
 
+
+                  )
+
+
+
+
+                )
 
             }
         }

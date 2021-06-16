@@ -111,7 +111,7 @@ function render () {
    trHeader.appendChild(thRemove);
    thRemove.textContent=`Remove`;
 
-  for (let i = 0; i < CartItems.cartArray .length ; i++) {
+  for (let i = 0; i < CartItems.cartArray.length ; i++) {
     let trProducts = document.createElement('tr');
     trProducts.setAttribute('id', 'trProducts'+i)
     table.appendChild(trProducts);
@@ -158,13 +158,13 @@ function render () {
   
   table.appendChild( total);
 
-  let tdtotal = document.createElement('td');
+  let tdtotal = document.createElement('div');
   total.appendChild(tdtotal );
     
    tdtotal.textContent = 'Total' ;
 
 
-    let tdTotalPrice = document.createElement('td');
+    let tdTotalPrice = document.createElement('div');
     total.appendChild(tdTotalPrice);
     
     tdTotalPrice.setAttribute('id', 'total');
