@@ -100,7 +100,7 @@ function getButton(event) {
                     'Your Product Successfuly added to the cart!',
                     'success'
 
-
+                )
             }
         }
 
