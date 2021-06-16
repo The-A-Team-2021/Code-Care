@@ -1,9 +1,10 @@
 body{
     background-color: whitesmoke;
+    
 }
 
 
-  *{
+*{
     box-sizing: border-box;
 }
 
@@ -40,23 +41,30 @@ nav{
 }
 
 
+nav ul{
+    padding: -10px;
+   
+}
+
+
 nav ul li {
     display: inline-block;
+    padding: 0% 10px;
     
     
 } 
 nav ul li a{
     text-decoration: none;
     color:white;
-    padding-left: 30px;
+    
 
 }
 
 
-nav ul li a:hover{
-    background: #f8d5df;
+nav ul li  :hover{
+    background-color: #BE1452;
     border-radius: 5px;
-}
+ }
 /* 
 #tableheader{
     margin-left:30%;
@@ -88,7 +96,7 @@ div table tr td {
     border:solid gray 2px;
     border-collapse: collapse;   
     padding:20px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Ubuntu', sans-serif;
      text-align: center;
      text-indent: 20px;
      font-size: large;
@@ -102,7 +110,7 @@ div table tr td {
     border:solid gray 2px;
     border-collapse: collapse;
     padding:20px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
      text-indent: 20px;
      font-size: x-large;
@@ -132,7 +140,7 @@ div table tr td {
            border-radius: 5px;
            width: 100px;
            height: 50px;
-           font-family: 'Architects Daughter', cursive;
+           font-family: 'Ubuntu', sans-serif;
         }
 
         footer{
