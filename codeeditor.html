@@ -26,19 +26,18 @@
     </header>
     <!-- <main> -->
     <div id="codearea">
+        <button id="button1"> Run Code</button>
         <textarea id="htmlcode" class="code" placeholder="Html code" oninput="showPreview()"></textarea>
         <textarea id="csscode" class="code" placeholder="css code" oninput="showPreview()"></textarea>
         <textarea id="jscode" class="code" placeholder="JavaScript code" oninput="showPreview()"></textarea>
-
+         
     </div>
-    <div>
-        <button id="button1"> Run Code</button>
-        <iframe id="previewwindow"></iframe>
-
+    <div id='iframe-parent'>
+    <iframe id="previewwindow"></iframe>
     </div>
-    </div>
+  <!-- </main> -->
 
-    <!-- </main> -->
+    
     <script src="JS/app.js"></script>
 
     <footer>
