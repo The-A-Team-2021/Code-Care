@@ -111,7 +111,7 @@ function render () {
    trHeader.appendChild(thRemove);
    thRemove.textContent=`Remove`;
 
-  for (let i = 0; i < CartItems.cartArray .length ; i++) {
+  for (let i = 0; i < CartItems.cartArray.length ; i++) {
     let trProducts = document.createElement('tr');
     trProducts.setAttribute('id', 'trProducts'+i)
     table.appendChild(trProducts);

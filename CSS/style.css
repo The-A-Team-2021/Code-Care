@@ -10,6 +10,8 @@ header {
     background-color: #1F2E29;
     color: white;
     height: 120px;
+    font-weight: bold;
+   
 
 }
 
@@ -26,16 +28,21 @@ header {
 
 #cart {
     position: relative;
-    left: 50%;
-    
-    bottom: 29px;
+    left: 57%;
+    height: 55px;
+    bottom: 30px;
+    width: 4%;
  
 }
 
 
-#cart:hover{
-    background-color: #7e1038; /* Green */
-    color: white;
+header a :hover{
+  
+        background: #BE1452;
+        border-radius: 20px;
+        
+        
+    
 }
 
 
@@ -54,10 +61,7 @@ header h2{
     position: relative;
     left: 190px;
     bottom: 64px;
-
-
-
-   
+ 
 }
 
 
@@ -66,25 +70,35 @@ header h2{
 
 nav{
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     left: 56%;
     bottom: 70px;
+
+    
     
 }
 
 
-nav ul{
+nav ul li a{
     text-decoration: none;
-   
+    color: white;
+
 }
+
 
 
 nav ul li {
     display: inline-block;   
-    text-decoration: none;
+  
    
 }
+
+nav ul li  :hover{
+    background-color:#BE1452;
+    border-radius: 5px;
+ }
+
 
 
 /* ////end of header */
@@ -93,7 +107,7 @@ nav ul li {
 
 body{
     background-color: whitesmoke;
-    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
     /* background-color: EAEAEA; */
 }
 
