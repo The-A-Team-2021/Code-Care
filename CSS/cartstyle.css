@@ -73,7 +73,7 @@ nav ul li {
     color:white;
    
     display: inline;
-    padding-left: 36px;
+    padding :12px;
 }
  
 nav ul li a{
@@ -242,6 +242,7 @@ div table tr td {
             height: 40px;
             width: 300px;
             margin-left: 30px;
+        }
     
 
 #button{
