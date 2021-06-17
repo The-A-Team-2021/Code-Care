@@ -1,0 +1,239 @@
+body{
+    background-color:whitesmoke;
+    position: relative;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background-color: #1F2E29;
+    color: white;
+    height: 120px;
+    width: 102%;
+    margin-top: -2%;
+    margin-left: -1%;
+    margin-right: -1%;
+    
+}
+#logo {
+   height: 139px;
+    position: relative;
+    top: 6px;
+    right: 10%;
+}
+#cart-logo {
+    position: relative;
+    left: 30%;
+    width: 50px;
+    bottom: 25px;
+    height: 35%;
+}
+header a img {
+    height: 80px;
+    margin: 20px;
+}
+ header a  :hover{
+    background-color: #BE1452;
+    border-radius: 10px;
+} 
+header h2{
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    left: 190px;
+    
+    bottom: 55px;
+}
+nav{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 28%;
+    bottom: 60px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+ nav ul li  :hover{
+   background-color: #BE1452;
+   border-radius: 5px;
+   padding: 10px;
+}
+/* 
+#tableheader{
+    margin-left:30%;
+    background-color: rgb(238, 183, 183);
+   
+    border:solid black 2px;
+    border-collapse: collapse;  
+    
+} */
+ /* #tableheader tbody tr th {
+    
+    border:solid black 1px;
+    border-collapse: collapse; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-indent: 20px; 
+    text-align:center;
+    }  */
+div table tr td {
+   
+    background-color:rgb(216, 215, 215);
+   
+    /* border: 2px solid #BE1452; */
+    
+    border-collapse: collapse;   
+    padding:20px;
+    /* font-family: 'Architects Daughter', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+     text-align: center;
+     text-indent: 20px;
+     font-size: large;
+   
+  }
+  div table tr th{
+    background-color: #1F2E29;;  
+    color: white;
+    /* border: 2px solid #BE1452; */
+    /* border-radius: 12px; */
+    border-collapse: collapse;
+    padding:20px;
+    /* font-family: 'Architects Daughter', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+     text-indent: 20px;
+     font-size: x-large;
+  }
+  
+  div table tr div{
+   
+    display: inline-block;
+    background-color: rgb(216, 215, 215);
+    padding: 30px;
+    margin-left:50px;
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    border: 1px solid #be145257;
+  }
+ #cart {
+    margin-left: 22%;
+    
+}
+     
+    
+/* #total{
+  
+    display: inline;
+    background-color: #f8d5df;
+    padding: 30px;
+    margin-bottom: 30%;
+} */
+ #form{
+ background-color: rgb(216, 215, 215);
+ margin-right: 20%;
+ margin-left: 20%;
+ font-family: 'Ubuntu', sans-serif;
+ font-size: large;
+ font-weight: bold;
+ border: 2px solid #BE1452;
+ border-radius: 12px;
+ 
+        
+        } 
+        #legend{
+            padding-top: 5%;
+            margin-left: 4%;
+}
+        #name{
+        height: 40px;
+        width: 300px;
+        margin-left: 105px;
+        
+        }
+        #email{
+            height: 40px;
+            width: 300px;
+            margin-left: 100px;
+    
+        }
+        #phoneNumber{
+            height: 40px;
+            width: 300px;
+            margin-left: 30px;
+    
+        }
+       label{
+            display:inline-table;
+            text-align: right;
+       
+           padding-left: 50px;}
+#button{
+    background-color:  #BE1452; /* Green */
+    border: none;
+    color: white;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    border-radius: 12px;
+    width: 147px;
+    height: 57px;
+    margin-left: 42%;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    
+}
+
+
+#button:hover{ 
+    background-color: #7e1038; /* Green */
+
+    color: white;
+    
+}
+
+
+
+
+
+        footer{
+            background-color: #1F2E29;
+            height: 10%;
+            position: relative;
+            bottom: 1%;
+            left: 2px;
+            top: 90%;
+            color: white;
+            width: 100%; 
+            padding: 1%;  
+            font-size:large;
+    }
+     .imagesfooter{
+        display: inline-flex;
+        float: right;
+        position: relative;
+        bottom: 30%;
+    }
+    #p2,#p1{
+        font-size:large;
+       padding: 1%;
+        margin-top: 1%;
+    }
+    #p3{
+        text-align: center;
+        margin-top: 4%;
+        bottom: 10%;
+        left: 10%;
+    }
